@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.card{
+    width:250px;
+    margin:50px auto;
+    padding:20px;
+    border:2px solid blue;
+    text-align:center;
+    border-radius:10px;
+}
+img{
+    width:100px;
+    border-radius:50%;
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+<img src="student.jpg" alt="Student">
+<h2>Poojitha</h2>
+<p>CSE Student</p>
+<p>Roll No: 12345</p>
+</div>
+
+</body>
+</html>
