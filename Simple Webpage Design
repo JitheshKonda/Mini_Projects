@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+    background-color: lightblue;
+    font-family: Arial;
+}
+h1{
+    color: darkblue;
+    text-align: center;
+}
+p{
+    color: black;
+    font-size: 18px;
+}
+</style>
+</head>
+<body>
+
+<h1>Welcome to HTML & CSS</h1>
+<p>This is my first styled webpage.</p>
+
+</body>
+</html>
