@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class ElectricityBill {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int choice;
+
+        do {
+            System.out.println("\n===== Electricity Bill =====");
+            System.out.println("1. View Bill");
+            System.out.println("2. Pay Bill");
+            System.out.println("3. Complaint");
+            System.out.println("4. Exit");
+
+            System.out.print("Enter Choice: ");
+            choice = sc.nextInt();
+
+            switch (choice) {
+                case 1:
+                    System.out.println("Current Bill: ₹1250");
+                    break;
+                case 2:
+                    System.out.println("Bill Paid Successfully");
+                    break;
+                case 3:
+                    System.out.println("Complaint Registered");
+                    break;
+                case 4:
+                    System.out.println("Thank You");
+                    break;
+                default:
+                    System.out.println("Invalid Choice");
+            }
+
+        } while (choice != 4);
+
+        sc.close();
+    }
+}
