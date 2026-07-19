@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+public class WaterTank {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int level = 500, choice;
+
+        do {
+            System.out.println("\n===== Water Tank =====");
+            System.out.println("1. Fill Water");
+            System.out.println("2. Use Water");
+            System.out.println("3. Check Level");
+            System.out.println("4. Exit");
+
+            System.out.print("Enter Choice: ");
+            choice = sc.nextInt();
+
+            switch (choice) {
+                case 1:
+                    level += 100;
+                    System.out.println("Water Filled");
+                    break;
+
+                case 2:
+                    level -= 100;
+                    System.out.println("Water Used");
+                    break;
+
+                case 3:
+                    System.out.println("Current Level: " + level + " Litres");
+                    break;
+
+                case 4:
+                    System.out.println("System Closed");
+                    break;
+
+                default:
+                    System.out.println("Invalid Choice");
+            }
+
+        } while (choice != 4);
+
+        sc.close();
+    }
+}
